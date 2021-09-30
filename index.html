@@ -68,7 +68,7 @@
             <br>
             <input type="text" id="name" placeholder="Ex: Computer Software" value="">
             <br>
-            <label for="icons">Icons</label>
+            <label for="icons">Icon</label>
             <br>
             <input id="icons" type="text" value="">
             <br>
@@ -77,21 +77,22 @@
             <textarea rows="8" value=""></textarea>
             <br>
             <div class="buttons">
-                <button class="addSegmentButton">Save</button>
-                <button class="addSegmentButton" onclick="closeDialogBox()">Cancel</button>
+                <button class="addSegmentButton button1">Save</button>
+                <button class="addSegmentButton button2" onclick="closeDialogBox()">Cancel</button>
             </div>
         </form>
     </div>
 
     <div class="wrapper" id="tableClick" style="display: none;">
-        <p class="heading">Add A Table <span onclick="closeTableDialogBox()">X</span>
+        <span onclick="closeTableDialogBox()">X</span>
+        <p class="heading">Add A Table
         </p>
         <form>
             <label for="name">Name*</label>
             <br>
             <input type="text" id="name" value="" name="name" placeholder="Ex: Computer Software" required>
             <br>
-            <label for="icons">Icons</label>
+            <label for="icons">Icon</label>
             <br>
             <input id="icons" type="text" value="" name="icons" required>
             <br>
@@ -103,9 +104,9 @@
 
             <!-- </div> -->
         </form>
-        <button class="addSegmentButton" onClick="saveTableData()">Save</button>
+        <button class="addSegmentButton button1" onClick="saveTableData()">Save</button>
 
-        <button class="addSegmentButton" onclick="closeTableDialogBox()">Cancel
+        <button class="addSegmentButton button2" onclick="closeTableDialogBox()">Cancel
         </button>
     </div>
 

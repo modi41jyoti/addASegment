@@ -1,107 +1,3 @@
-/* .wrapper{
-    position: absolute;
-    width: 550px;
-    height: 541px;
-    background: #FeFeFe;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 30px;
-    left: 600px;
-    top: 200px;
-    overflow: auto;
-}
-
- .heading{
-    /* position: absolute; */
-    /* width: 413px;
-    height: 14px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: #3C3C3C; */
- /* } 
- .heading span{ 
-    position: relative;
-    left: 60%;
-    font-size: 15px;
-    font-weight: 300;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-
-    background: #888888;
-}  */
- /* label{
-    margin-bottom: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    position: absolute;
-    width: 468px;
-    height: 14px;
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    /* or 112% */
-
- /*display: flex;
-    align-items: center;
-
-    color: #3C3C3C;
-
-}  */
-/* .wrapper input{
-    margin-bottom: 15px;
-    width: 470px;
-    height: 40px;
-    margin-bottom: 4px;
-    position: absolute;
-    background: #FFFFFF;
-    border: 0.5px solid #888888;
-    box-sizing: border-box; 
-
-     
-}  */
-
-
-/* textarea{
-    margin-bottom: 15px;
-    width: 90%;
-    border-radius: 6px;
-    margin-top: 4px;
-    position: absolute;
-    width: 470px;
-    height: 124.83px;
-
-    background: #FFFFFF;
-    border: 0.5px solid #888888;
-    box-sizing: border-box;
-
-} 
-.addSegmentButton{
-    width: 120px;
-    height: 40px;
-    margin: 15px;
-    border-radius: 5px;
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.buttons{
-    justify-content: center;
-    display: flex;
-
-}  */
-
 .wrapper{
     width: 550px;
     height: 541px;
@@ -121,12 +17,16 @@
     font-size: 22px;
     line-height: 18px;
     padding: 25px;
+    
 }
 
-.heading span{
+.wrapper span{
     position: absolute;
     right: 31px;
-    opacity: 0.5;
+    top: 40px;
+    color: #888888;
+    width: 12px;
+    height: 12px;
 }
 
 .wrapper label, .wrapper input, textarea, .addSegmentButton {
@@ -134,17 +34,64 @@
     margin-bottom: 25px;
 }
 
+.wrapper label{
+    position: absolute;
+    width: 468px;
+    height: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 18px;   
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #3C3C3C;
+}
+
 .wrapper input{
     width: 470px;
     height: 40px;
+    /* position: absolute; */
+    background: #FFFFFF;
+    border: 0.5px solid #888888;
+    /* box-sizing: border-box; */
+    border-radius: 5px;
+    padding-left: 2px;
+}
+
+input:focus{
+    border-color: blue !important;
 }
 
 textarea{
     width: 470px;
+    height: 124.83px;
+    background: #FFFFFF;
+    border: 0.5px solid #888888;
+    /* box-sizing: border-box; */
 }
 
 .addSegmentButton{
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+}
 
+
+
+.button1 {
+      background: rgba(60, 60, 60, 0.5);
+    color: white;
+    opacity: 0.9;
+   
+}
+.button2{
+    background-color: white;
+}
+
+.button2:hover{
+    color: blue;
+    border-color: blue
 }
