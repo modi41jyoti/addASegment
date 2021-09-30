@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addASegment.css">
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div class="bodyWrapper" id="bodyWrapper">
+        <div class="sideNavBar">
+            <img src="6.png" alt="file image" style="margin-left: 10px;">
+            <ul>
+                <li><img src="3482212.png" alt="options" style="width: 30px;"></li>
+                <li><img src="Vector (2).png" alt="alarm" /></li>
+                <li><img src="Jas Arora 1.png" alt="profile" style="width: 35px;"></li>
+            </ul>
+        </div>
+        <div class='navBar'>
+            <h1 class="prospector">Prospector</h1>
+            <input type="search" name="search" id="search" placeholder="Search for a table or a segment">
+            <p class="segment">SEGMENT</p>
+            <ul>
+                <li>Segment 1</li>
+                <li>Segment 2</li>
+                <li>Segment 3</li>
+                <li>Segment 4</li>
+                <li>Segment 5</li>
+            </ul>
+            <button class="addASegment" onClick="addASegmentClicked()">+ Add a segment</button>
+
+        </div>
+
+        <div class=" container">
+            <div class="topBar">
+                <ul>
+                    <li><img src="image 3.png" alt="menu option" /><i class="fa fa-angle-down"
+                            style="font-size:20px"></i></li>
+                    <li><img src="Vector.png" alt="Menu"></li>
+
+                </ul>
+            </div>
+            <hr />
+            <div class="mainContaint">
+                <h1 class="segment"> Segment 1 <i class="fa fa-angle-down" style="font-size:36px"></i></h1>
+                <div class="addButton" onclick="addATableClicked()">+</div>
+                <h1 class="segment">Segment 2 <i class="fa fa-angle-down" style="font-size:36px"></i></h1>
+                <div class="addButton" onclick="addATableClicked()">+</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="wrapper" id="segmentClick" style="display: none;">
+        <p class="heading">Add A Segment <span onclick="closeDialogBox()">X</span>
+        </p>
+        <form>
+            <label for="name">Name*</label>
+            <br>
+            <input type="text" id="name" placeholder="Ex: Computer Software" value="">
+            <br>
+            <label for="icons">Icons</label>
+            <br>
+            <input id="icons" type="text" value="">
+            <br>
+            <label for="description">Description</label>
+            <br>
+            <textarea rows="8" value=""></textarea>
+            <br>
+            <div class="buttons">
+                <button class="addSegmentButton">Save</button>
+                <button class="addSegmentButton" onclick="closeDialogBox()">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="wrapper" id="tableClick" style="display: none;">
+        <p class="heading">Add A Table <span onclick="closeTableDialogBox()">X</span>
+        </p>
+        <form>
+            <label for="name">Name*</label>
+            <br>
+            <input type="text" id="name" value="" name="name" placeholder="Ex: Computer Software" required>
+            <br>
+            <label for="icons">Icons</label>
+            <br>
+            <input id="icons" type="text" value="" name="icons" required>
+            <br>
+            <label for="color">Color</label>
+            <br>
+            <input id="color" type="color" name="color" required>
+            <br>
+            <!-- <div class="buttons"> -->
+
+            <!-- </div> -->
+        </form>
+        <button class="addSegmentButton" onClick="saveTableData()">Save</button>
+
+        <button class="addSegmentButton" onclick="closeTableDialogBox()">Cancel
+        </button>
+    </div>
+
+
+
+</body>
+
+</html>

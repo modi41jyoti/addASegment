@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyWrapper{
+    display: flex;
+}
+
+.sideNavBar{
+    background-color: rgb(231,231,231);
+    width: 58px;
+    height: 100vh;
+    z-index: 100;
+
+}
+
+.sideNavBar img{
+    padding-top: 15px;
+}
+
+.sideNavBar ul{
+    position: absolute;
+    bottom: 30px;
+}
+
+.sideNavBar li {
+    margin-top: 10px;
+    padding-left: 12px;
+    list-style-type: none;
+}
+.navBar{
+    background-color: #F1F1F1;
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    left: 3.05%;
+    right: 81.77%;
+    top: 0%;
+    bottom: 0.09%;
+    z-index: 99;
+}
+
+.navBar li{
+    margin-left: 38px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#search{
+    padding-left: 10px;
+}
+
+.topBar{
+    width: 80vw;   
+}
+
+.topBar ul{
+    display: flex;
+    list-style-type: none;
+    direction: rtl;
+    height: 80px;
+}
+
+.topBar li{
+    margin: 10px;
+ 
+    display: flex;
+    align-items: center;
+   
+}
+
+.topBar li:first-child{
+    width: 250px;
+    height: 23px;
+    margin-top: 30px;
+}
+
+i:hover{
+    color: blue;
+}
+
+/* .segment:hover{
+    text-decoration: underline;
+   text-decoration-color: blue;
+} */
+
+.addButton:hover{
+    border: 2px solid blue;
+}
+.container {
+    left: 19%;
+    display: block;
+    position: absolute; 
+}
+
+.addButton{
+    width: 78px;
+    height: 78px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+
+}
+
+.addButton:hover{
+    background: 1px solid blue;
+}
+
+#search input, .segment{
+    margin: 20px;
+}
+
+.prospector{
+    margin: 20px;
+}
+
+#search{
+    width: 250px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.addASegment{
+    width: 85%;
+    height: 40px;
+    background: blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 15px;
+    margin-left: 20px;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    padding-left: 10px;
+}
+
+.addASegment:hover{
+    border: 2px solid blue
+
+}
+
+li:hover{
+    color: blue
+}
